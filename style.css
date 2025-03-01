@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: cursive;
+    box-sizing: border-box;
+}
+
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(249, 57, 57);
+    height: 5vh;
+}
+
+.top-nav .nav-left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.top-nav .nav-left a {
+    font-size: 3vh;
+    margin-left: 17vh;
+    color: white;
+    text-decoration: none;
+}
+
+.top-nav .nav-right {
+    display: flex;
+    align-items: center;
+}
+
+.top-nav .nav-right input[type=search] {
+    margin-right: 22vh;
+    width: 32vh;
+    border: none;
+    padding: 1.1vh;
+    background-color: brown;
+}
+
+i {
+    position: relative;
+    right: 22vh;
+    padding: 1vh 1vh;
+    font-size: 3.2vh;
+    color: white;
+    cursor: pointer;
+}
+
+.top-nav .nav-right .side-overlay {
+    background-color: rgb(71, 70, 70);
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    visibility: hidden;
+
+}
+
+.top-nav .nav-right .side-overlay .close-btn {
+    color: white;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 6vh;
+    margin-right: 4vh;
+    cursor: pointer;
+}
+
+.top-nav .nav-right .side-overlay ul {
+    list-style-type: none;
+    position: relative;
+    top: -27vh;
+    left: -6vh;
+    line-height: 4vh;
+}
+
+.top-nav .nav-right .side-overlay ul li {
+    font-size: 2.5vh;
+    margin-left: 1vh;
+    color: white;
+}
+
+#toggle:checked+.side-overlay {
+    visibility: visible;
+    opacity: 1;
+}
+
+.top-nav .nav-right input[type=checkbox] {
+    visibility: hidden;
+}
+
+.top-nav div.nav {
+    position: relative;
+    top: 10.9vh;
+    background-color: rgb(249, 57, 57);
+    width: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 5vh;
+    visibility: hidden;
+    box-shadow: 2px 2px 1px rgb(197, 189, 189);
+}
+
+.top-nav div label.btn {
+    position: absolute;
+    top: -0.4vh;
+    color: white;
+    font-size: 3vh;
+    cursor: pointer;
+
+}
+
+.top-nav div label i#active {
+    position: relative;
+    right: -1vh;
+    top: 0.3vh;
+    font-size: 3vh;
+
+}
+
+.top-nav div.nav ul {
+    list-style-type: none;
+    font-size: 2vh;
+}
+
+.top-nav div .nav ul li {
+    color: white;
+    cursor: pointer;
+}
+
+.top-nav div input#sub:checked+.nav {
+    visibility: visible;
+}
+
+.top-nav div .nav ul li:hover {
+    background-color: gray;
+    color: violet;
+}
